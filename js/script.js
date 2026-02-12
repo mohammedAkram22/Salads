@@ -47,10 +47,10 @@ document.onclick = () => {
 
 // mood btn
 const nav = document.querySelector("nav");
-const mood = localStorage.getItem("mood")
 const moodBtn = document.querySelector("#mood-btn")
 
 moodBtn.onclick = () => {
+    const mood = localStorage.getItem("mood")
     if (mood) {
         if (localStorage.getItem("mood") == "dark") {
             document.documentElement.classList.remove("dark")
@@ -63,12 +63,14 @@ moodBtn.onclick = () => {
         }
     } else {
         localStorage.setItem("mood", "dark");
+        moodBtn.querySelector("i").classList.replace("fa-moon", "fa-sun")
         document.documentElement.classList.add("dark")
     }
 }
 
 // on load
 window.onload = () => {
+    // Header height
     if (document.documentElement.scrollTop > 95) {
         nav.classList.add("scrolled-nav")
         topBtn.classList.remove("invisible", "opacity-0");
@@ -76,6 +78,8 @@ window.onload = () => {
         nav.classList.remove("scrolled-nav")
         topBtn.classList.add("invisible", "opacity-0");
     }
+    // website mood
+    const mood = localStorage.getItem("mood")
     if (mood) {
         if (localStorage.getItem("mood") == "dark") {
             moodBtn.querySelector("i").classList.replace("fa-moon", "fa-sun")
@@ -84,7 +88,12 @@ window.onload = () => {
             moodBtn.querySelector("i").classList.replace("fa-sun", "fa-moon")
             document.documentElement.classList.remove("dark")
         }
+    } else {
+        localStorage.setItem("mood", "light")
+        moodBtn.querySelector("i").classList.replace("fa-sun", "fa-moon")
+        document.documentElement.classList.remove("dark")
     }
+
     // Typing Effect
     const p = document.querySelector(".typing");
     const text = p.innerText;
