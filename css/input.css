@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,100,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --main-color: #f7783c;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav li .active {
+    color: var(--main-color);
+}
+
+.hero #hero-img {
+    animation: spin 8.5s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero,
+.feedback,
+.populars {
+    background: linear-gradient(-45deg, #aaffa9, #11ffbd, #87f786, #07f9b6);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* menu */
+
+.menu {
+    background: url(https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/img1.png), linear-gradient(-45deg, #aaffa9, #11ffbd);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: right;
+    z-index: 1;
+}
+
+/* .owl-dots */
+.owl-dots {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.owl-dot span {
+    background: rgb(170, 170, 170);
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 999px;
+    transition: all .3s ease;
+}
+
+.owl-dot.active span,
+.owl-dot span:hover {
+    background: #f7783c;
+}
+
+/* dark mood */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* typing */
+.typing::after {
+    content: '|';
+    animation: puls 1s ease infinite;
+}
+
+@keyframes puls {
+    50% {
+        opacity: 0;
+    }
+}

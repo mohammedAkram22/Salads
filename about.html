@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page &#8211; Salads &#8211; Restaurants Category Website WordPress Theme</title>
+    <link rel="icon" href="images/w3layout.png">
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <header>
+        <nav
+            class="fixed w-full z-20 top-0 left-0 h-22.5 flex flex-wrap items-center duration-500 bg-transparent
+            [&.scrolled-nav]:bg-white [&.scrolled-nav]:dark:bg-[#19211E] [&.scrolled-nav]:h-20 [&.scrolled-nav]:shadow scrolled-nav">
+            <div
+                class="flex flex-wrap items-center justify-between p-4 w-full mx-auto xl:max-w-300 min-[1200px]:max-w-285 min-[992px]:max-w-240 min-[768px]:max-w-180 min-[576px]:max-w-135">
+                <div class="logo">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <h1 class="text-4xl font-bold dark:text-[#fdfffc]">Sa<i
+                                class="fas fa-utensil-spoon text-[#f7783c] -rotate-44 -mx-3.25"></i>ads</h1>
+                    </a>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button data-collapse-toggle="navbar-default" type="button" id="toggler-btn"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-body rounded-base md:hidden hover:text-heading focus:outline-none rounded-xl cursor-pointer text-md bg-[#f7783c] text-white"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto  max-[768px]:absolute max-[768px]:top-full max-[768px]:left-0 max-[768px]:shadow-md max-[768px]:shadow-gray-200 dark:max-[768px]:shadow-[#1e2723] rounded-2xl"
+                        id="navbar-default">
+                        <ul
+                            class="font-medium flex flex-col justify-center items-center p-4 md:p-0 mt-4 rounded-2xl bg-transparent max-[768px]:bg-white dark:max-[768px]:bg-[#19211E] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                            <li
+                                class="px-3.75 hover:text-[#f7783c] duration-500 hover:bg-transparent max-[768px]:hover:bg-gray-100 dark:max-[768px]:hover:bg-[#1e2723] w-full cursor-pointer mx-0 dark:text-[#fdfffc] text-center">
+                                <a href="index.html"
+                                    class="nav-link block py-2 px-3 w-full text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Home</a>
+                            </li>
+                            <li
+                                class="px-3.75 hover:text-[#f7783c] duration-500  hover:bg-transparent max-[768px]:hover:bg-gray-100 dark:max-[768px]:hover:bg-[#1e2723] w-full cursor-pointer mx-0 dark:text-[#fdfffc] text-center">
+                                <a href="about.html"
+                                    class="nav-link block py-2 px-3 w-full text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent active">About</a>
+                            </li>
+                            <li
+                                class="px-3.75 hover:text-[#f7783c] duration-500  hover:bg-transparent max-[768px]:hover:bg-gray-100 dark:max-[768px]:hover:bg-[#1e2723] w-full cursor-pointer mx-0 dark:text-[#fdfffc] text-center">
+                                <a href="menu.html"
+                                    class="nav-link block py-2 px-3 w-full text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Menu</a>
+                            </li>
+                            <li class="px-3.75 cursor-pointer relative w-full mx-0 nav-link dark:text-[#fdfffc]">
+                                <button id="dropdownNvbarButton"
+                                    class="hover:text-[#f7783c] duration-500 hover:bg-gray-100  cursor-pointer flex items-center justify-center gap-1 w-full py-2 px-3 rounded text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent dark:max-[768px]:hover:bg-[#1e2723] md:border-0 md:hover:text-fg-brand md:p-0">
+                                    Pages
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div id="dropdownNavbar"
+                                    class="absolute max-[768px]:left-[40%] min-[768px]:mt-5 mt-2 z-50 hidden rounded-2xl shadow-lg w-44 bg-white dark:bg-[#19211E]">
+                                    <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
+                                        <li
+                                            class="hover:text-[#f7783c] duration-500 hover:bg-gray-100 dark:hover:bg-[#1e2723] dark: dark:text-[#fdfffc] w-full">
+                                            <a href="blog.html"
+                                                class="nav-link inline-flex items-center w-full p-2 hover:text-heading rounded">Blog
+                                                Page</a>
+                                        </li>
+                                        <li
+                                            class="hover:text-[#f7783c] duration-500 hover:bg-gray-100 dark:hover:bg-[#1e2723] w-full dark:text-[#fdfffc]">
+                                            <a href="error.html"
+                                                class="nav-link inline-flex items-center w-full p-2 hover:text-heading rounded">404
+                                                Page</a>
+                                        </li>
+                                        <li
+                                            class="hover:text-[#f7783c] duration-500 hover:bg-gray-100 dark:hover:bg-[#1e2723] w-full dark:text-[#fdfffc]">
+                                            <a href="landing.html"
+                                                class="nav-link inline-flex items-center w-full p-2 hover:text-heading rounded">Landing
+                                                Page
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li
+                                class="px-3.75 hover:text-[#f7783c] duration-500  hover:bg-transparent max-[768px]:hover:bg-gray-100 dark:max-[768px]:hover:bg-[#1e2723] w-full cursor-pointer mx-0 dark:text-[#fdfffc] text-center">
+                                <a href="contact.html"
+                                    class="nav-link block py-2 px-3 w-full text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+                            </li>
+                            <li
+                                class="px-3.75 duration-500  hover:bg-transparent max-[768px]:hover:bg-gray-100 dark:max-[768px]:hover:bg-[#1e2723] w-full cursor-pointer mx-0 text-center">
+                                <a href="#"
+                                    class="nav-link block py-2 px-3 w-full text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent dark:text-[#fdfffc]"
+                                    id="search-btn"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="cursor-pointer max-[768px]:ms-5 hover:text-[#f7783c] duration-100" id="mood-btn">
+                        <i class="fa-regular fa-moon text-[18px] dark:text-[#fdfffc]"></i></button>
+                </div>
+            </div>
+        </nav>
+        <div class="fixed h-1 w-full top-20 left-0 z-20 ">
+            <div class="bg-[linear-gradient(-45deg,#77cc77,#0ccca0,#64c96a,#06c08f)] w-full h-1 progress"
+                style="width: 0;"></div>
+        </div>
+    </header>
+    <main>
+        <section
+            class="hero py-12 relative dark:before:content-[''] dark:before:absolute dark:before:w-full dark:before:h-full dark:before:-z-1 dark:before:top-0 dark:before:bg-black/60">
+            <div
+                class="w-full mx-auto xl:max-w-300 min-[1200px]:max-w-285 min-[992px]:max-w-240 min-[768px]:max-w-180 min-[576px]:max-w-135 min-[992px]:py-12 px-3">
+                <div>
+                    <h4 class="text-[30px] mb-1 font-bold pt-12 dark:text-[#fdfffc] typing">
+                        About Us</h4>
+                    <ul>
+                        <a href="index.html"
+                            class="hover:text-[#f7783c] font-bold opacity-85 duration-500 dark:text-[#fdfffc]">Home</a>
+                        <span class="dark:text-[#fdfffc]"> &nbsp; »&nbsp; About page</span>
+                    </ul>
+                </div>
+                <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/banner2.png"
+                    alt="banner2"
+                    class="max-w-full h-auto absolute bottom-11 max-[992px]:-bottom-11 max-[992px]:left-11 left-0 right-0 mx-auto max-[590px]:-bottom-30 max-[590px]:m-[auto_0_0_0] max-[590px]:ms-auto">
+            </div>
+        </section>
+        <section class="experience py-12 dark:bg-[#19211E]">
+            <div
+                class="w-full mx-auto xl:max-w-300 min-[1200px]:max-w-285 min-[992px]:max-w-240 min-[768px]:max-w-180 min-[576px]:max-w-135 min-[992px]:py-12 px-3">
+                <div class="grid min-[990px]:grid-cols-2 min-[990px]:gap-0 gap-25">
+                    <div class="left-content max-[990px]:w-full min-[1281px]:w-149.25 max-[1280px]:w-120.75 max-[1200px]:w-104.25 max-[990px]:px-3 max-[1365px]:ps-8 pe-3"
+                        data-aos="fade-right">
+                        <div class="content">
+                            <h3 class="text-[28px] text-[#060606] font-thin mb-2 dark:text-[#fdfffc]">Since 2006</h3>
+                            <h3
+                                class="text-[45px] text-[#060606] font-bold max-[1200px]:text-[40px] max-[568px]:text-[35px] dark:text-[#fdfffc]">
+                                We Have <span
+                                    class="text-[#f7783c] font-normal text-[45px]/[55px] max-[568px]:text-[35px] max-[568px]:font-semibold">30+</span>
+                                Years of Experience
+                            </h3>
+                            <p class="pt-2 mt-6 italic text-[#060606] dark:text-[#fdfffc]">"Orem ipsum viverra feugiat.
+                                Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Non quae, fugiat".
+                            </p>
+                            <p class="mt-6 text-[#060606] dark:text-[#fdfffc]">Semper at tempufddfel. Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Non quae, fugiat. Lorem ipsum viverra feugiat.
+                                Pellen tesque libero ut justo, ultrices in ligula.
+                            </p>
+                            <img src="images/sign.png" alt="sign"
+                                class="max-w-full mt-12 px-2.5 dark:bg-[#fdfffc] rounded-xs">
+                        </div>
+                    </div>
+                    <div class="right-content px-3 flex items-center justify-center min-[990px]:block max-[345px]:w-78.5 max-[568px]:w-85 mx-auto max-[992px]:mb-7"
+                        data-aos="fade-left">
+                        <div
+                            class="images relative w-140.25 max-[1280px]:w-120.75 max-[1200px]:w-100 max-[992px]:pb-10 mx-auto">
+                            <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/ab3.jpg"
+                                alt="ab1" class="max-w-full h-auto rounded-xl max-[568px]:w-54">
+                            <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/ab4.jpg"
+                                alt="ab2"
+                                class="max-w-full h-auto rounded-xl border-l-[6px] border-t-[6px] border-white dark:border-[#19211e] absolute top-20.5 right-0 z-1 xl:me-12 max-[568px]:w-54">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="populars py-12 dark:before:content-[''] dark:before:absolute dark:before:w-full dark:before:h-full dark:before:-z-1 dark:before:top-0 dark:before:bg-black/60"
+            data-aos="fade-zoom-in">
+            <div
+                class="w-full mx-auto xl:max-w-300 min-[1200px]:max-w-285 min-[992px]:max-w-240 min-[768px]:max-w-180 min-[576px]:max-w-135 min-[992px]:py-12 py-6 px-3.75">
+                <div class="grid min-[992px]:grid-cols-2 items-center gap-15">
+                    <div class="left-content flex items-center justify-center">
+                        <img src="images/about.jpg" alt="about" class="max-w-full max-h-146.75 rounded-lg">
+                    </div>
+                    <div class="right-content">
+                        <h3 class="text-[45px] font-bold mb-2 dark:text-[#fdfffc] max-[992px]:text-[40px] max-[568px]:text-[35px]"
+                            data-aos="fade-up">
+                            Populars In</h3>
+                        <p class="opacity-80 dark:text-[#fdfffc]" data-aos="fade-up">Sed ut perspiciatis unde omnis iste
+                            natus error sit accusantium doloremque, eaque ipsa quae ab illo inventore.</p>
+
+                        <div
+                            class="flex items-center justify-between mt-12 min-[992px]:pt-6 pb-2.5 border-b border-b-[#060606] dark:border-b-[#fdfffc] px-3" data-aos="fade-right">
+                            <h6 class="text-[24px] font-semibold dark:text-[#fdfffc]">Green salad</h6>
+                            <h6 class="text-[26px] font-semibold pe-15 dark:text-[#fdfffc]">$19.50</h6>
+                        </div>
+                        <div
+                            class="flex items-center justify-between mt-12 sm:mt-12 border-b border-b-[#060606] dark:border-b-[#fdfffc] px-3" data-aos="fade-left">
+                            <h6 class="text-[24px] font-semibold dark:text-[#fdfffc]">Fruit salads</h6>
+                            <h6 class="text-[26px] font-semibold pe-15 dark:text-[#fdfffc]">$40.50</h6>
+                        </div>
+                        <div
+                            class="flex items-center justify-between mt-12 sm:mt-12 border-b border-b-[#060606] dark:border-b-[#fdfffc] px-3" data-aos="fade-right">
+                            <h6 class="text-[24px] font-semibold dark:text-[#fdfffc]">Dessert salads</h6>
+                            <h6 class="text-[26px] font-semibold pe-15 dark:text-[#fdfffc]">$36.50</h6>
+                        </div>
+                        <a href=""
+                            class="bg-[#f7783c] hover:bg-[#0abf53] duration-500 rounded-[30px] font-bold px-9 pt-3 pb-3.5 text-white inline-block mt-12" data-aos="fade-right">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="specialists py-12 overflow-x-hidden dark:bg-[#19211E]">
+            <div
+                class="w-full mx-auto xl:max-w-300 min-[1200px]:max-w-285 min-[992px]:max-w-240 min-[768px]:max-w-180 min-[576px]:max-w-135 min-[992px]:py-12 py-6 px-3.75">
+                <div class="heading text-center">
+                    <h3
+                        class="text-[45px] font-bold sm:mb-12 mb-6 max-[992px]:text-[40px] max-[568px]:text-[35px] dark:text-[#fdfffc]">
+                        Our Specialists</h3>
+                </div>
+                <div class="cards grid md:grid-cols-4 grid-cols-2 gap-5 px-3">
+                    <div class="card group" data-aos="fade-right">
+                        <div class="card-head max-w-68.5 rounded-lg overflow-hidden">
+                            <a href="">
+                                <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/team1.jpg"
+                                    alt="team1"
+                                    class="max-w-full h-auto rounded-lg group-hover:scale-[1.1] duration-400">
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="mt-3.75 text-[22px] font-semibold"><a href=""
+                                    class="group-hover:text-[#0abf53] dark:text-[#fdfffc] cursor-pointer min-[992px]:px-10 duration-300">John
+                                    Doe</a>
+                            </h4>
+                            <p class="text-[14px] dark:text-[#fdfffc]">Owner</p>
+                            <div class="linkes mt-1.5">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-x"></i></a></li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group" data-aos="fade-left">
+                        <div class="card-head max-w-68.5 rounded-lg overflow-hidden">
+                            <a href="">
+                                <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/team2.jpg"
+                                    alt="team1"
+                                    class="max-w-full h-auto rounded-lg group-hover:scale-[1.1] duration-400">
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="mt-3.75 text-[22px] font-semibold"><a href=""
+                                    class="group-hover:text-[#0abf53] dark:text-[#fdfffc] cursor-pointer min-[992px]:px-10 duration-300">Alexander</a>
+                            </h4>
+                            <p class="text-[14px] dark:text-[#fdfffc]">Chef</p>
+                            <div class="linkes mt-1.5">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-x"></i></a></li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group" data-aos="fade-right">
+                        <div class="card-head max-w-68.5 rounded-lg overflow-hidden">
+                            <a href="">
+                                <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/team3.jpg"
+                                    alt="team1"
+                                    class="max-w-full h-auto rounded-lg group-hover:scale-[1.1] duration-400">
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="mt-3.75 text-[22px] font-semibold"><a href=""
+                                    class="group-hover:text-[#0abf53] dark:text-[#fdfffc] cursor-pointer min-[992px]:px-10 duration-300">Martin
+                                    ker</a>
+                            </h4>
+                            <p class="text-[14px] dark:text-[#fdfffc]">Co-founder</p>
+                            <div class="linkes mt-1.5">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-x"></i></a></li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group" data-aos="fade-left">
+                        <div class="card-head max-w-68.5 rounded-lg overflow-hidden">
+                            <a href="">
+                                <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/team4.jpg"
+                                    alt="team1"
+                                    class="max-w-full h-auto rounded-lg group-hover:scale-[1.1] duration-400">
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="mt-3.75 text-[22px] font-semibold"><a href=""
+                                    class="group-hover:text-[#0abf53] dark:text-[#fdfffc] cursor-pointer min-[992px]:px-10 duration-300">Elizabeth</a>
+                            </h4>
+                            <p class="text-[14px] dark:text-[#fdfffc]">Specialist</p>
+                            <div class="linkes mt-1.5">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-x"></i></a></li>
+                                    <li><a href="" class="dark:text-[#fdfffc]"><i class="fab fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="feedback py-12 before:content-[''] before:absolute before:w-full before:h-full before:bg-transparent before:-z-1 before:top-0 dark:before:bg-black/60"
+            data-aos="fade-zoom-in">
+            <div
+                class="max-[1280px]:max-w-277.5 max-[1200px]:max-w-232.5 max-[990px]:max-w-172.5 max-[769px]:max-w-133.5 max-[576px]:max-w-full max-w-292.5 mx-auto min-[770px]:py-12 py-6">
+                <div class="owl-carousel min-[770px]:py-2 mt-6 min-[770px]:mb-6 cursor-grab">
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis in faucibus orci luctus et ultrices posuere,tesque libero ut justo
+                                Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi1.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi2.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi3.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi1.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi2.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi3.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi1.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi2.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi3.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi1.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi2.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi3.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex gap-7">
+                        <span class=""
+                            style="font-size: 120px; font-weight: 900; line-height: 0.7; color: #f7783c; font-family: Georgia, 'Times New Roman', serif;">“</span>
+                        <div>
+                            <blockquote class="mb-4">
+                                <q class="text-[22px] font-medium dark:text-[#fdfffc]">Lorem ipsum dolor sit amet</q>
+                            </blockquote>
+                            <p class="opacity-80 dark:text-[#fdfffc]">Lorem ipsum dolor sit amet elit. hic odio tenetur.
+                                ante ipsum primis
+                                in
+                                faucibus orci luctus et ultrices posuere,tesque libero ut justo Semper.</p>
+                            <div class="bottom-contect mt-6">
+                                <h3 class="text-[20px] font-semibold dark:text-[#fdfffc]">Johnson william</h3>
+                                <div class="stars">
+                                    <ul class="flex items-center gap-1">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-solid fa-star text-[15px] text-[#f7783c]"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="w-17.5 h-17.5 block rounded-full mt-4">
+                                    <img src="https://wp.w3layouts.com/salads/wp-content/themes/salads/assets/images/testi1.jpg"
+                                        alt="" class="max-w-full h-auto rounded-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Subscribe pt-12 min-[770px]:pb-6 dark:bg-[#19211e]">
+            <div
+                class="max-[1280px]:max-w-277.5 max-[1200px]:max-w-232.5 max-[990px]:max-w-172.5 max-[769px]:max-w-133.5 max-[576px]:max-w-full max-w-292.5 mx-auto pt-6 px-3.75">
+                <div class="heading text-center">
+                    <h3 class="text-[45px] font-bold max-w-175 mx-auto max-[990px]:text-[40px] max-[570px]:text-[35px] dark:text-[#fdfffc]"
+                        data-aos="fade-up">
+                        Subscribe to get email updates of our latest
+                        news</h3>
+                </div>
+                <div class="flex items-center justify-center mt-6" data-aos="fade-up">
+                    <form action="" class="flex max-[570px]:flex-wrap items-center justify-center w-175">
+                        <input type="email" name="email" id="email" placeholder="Enter your email"
+                            class="border-[1.6px] border-[#eee] rounded-s-[30px] py-3.75 px-5 text-[17px] outline-0 focus:border-[#f7783c] w-full max-[570px]:mx-5 max-[400px]:mx-2 max-[570px]:rounded-[30px] dark:text-[#fdfffc] dark:border-[#fdfffc67]">
+                        <button
+                            class="bg-[#f7783c] duration-300 font-bold cursor-pointer hover:bg-[#0abf53] py-[16.6px] px-9 text-white rounded-e-[30px] max-[570px]:w-full max-[570px]:mt-3 max-[570px]:mx-5 max-[400px]:mx-2 max-[570px]:rounded-[30px]">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <div class="top-btn">
+            <button
+                class="cursor-pointer text-white border-0 bg-[#f7783c] rounded-full p-3 fixed bottom-9 right-4 hover:opacity-90 duration-300 opacity-0 invisible z-50"><i
+                    class="fas fa-level-up-alt"></i></button>
+        </div>
+        <div class="fixed top-0 left-0 ring-0 bottom-0 w-full bg-[rgba(25,23,23,0.81)] min-h-screen flex items-center justify-center z-20 opacity-0 invisible"
+            id="search">
+            <button class=" absolute top-20 right-0 me-41 cursor-pointer p-3" id="close-btn"><i
+                    class="fas fa-close text-white text-[20px]"></i></button>
+            <div class="max-w-175 w-full py-10 px-12.5 flex items-center">
+                <input type="text" name="Keyword" placeholder="Enter Keyword..."
+                    class="py-11.25 px-7.5 text-[#060606] dark:text-[#fdfffc] text-[30px] bg-white dark:bg-[#19211e] outline-0 h-0 w-full"
+                    autofocus>
+                <button
+                    class="bg-[#f7783c] text-white py-1.5 px-3 w-22.5 h-22.5 text-[28px] cursor-pointer duration-500 font-bold mx-auto block hover:bg-[#0abf53]"><i
+                        class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="footer md:py-12 dark:bg-[#19211e]">
+            <div
+                class="max-[1280px]:max-w-277.5 max-[1200px]:max-w-232.5 max-[990px]:max-w-172.5 max-[769px]:max-w-133.5 max-[576px]:max-w-full max-w-292.5 mx-auto py-12 px-3.75">
+                <div class="flex max-[570px]:flex-wrap justify-between items-center">
+                    <div class="left-content max-w-93.5" data-aos="fade-up">
+                        <div class="heading">
+                            <h6 class="text-[18px] font-bold mb-6.25 dark:text-[#fdfffc]">ABOUT</h6>
+                        </div>
+                        <p class="text-[14px] opacity-80 dark:text-[#fdfffc]">Sed ut perspiciatis unde omnis iste natus
+                            error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+                        <div class="linkes mt-5">
+                            <ul class="flex items-center gap-2">
+                                <li
+                                    class="bg-[#FEE9E0] hover:bg-[#f7783c] dark:bg-[#3D2F23] dark:text-[#fdfffc] cursor-pointer duration-300 rounded-full w-8.75 h-8.75 flex items-center justify-center">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li
+                                    class="bg-[#FEE9E0] hover:bg-[#f7783c] dark:bg-[#3D2F23] dark:text-[#fdfffc] cursor-pointer duration-300 rounded-full w-8.75 h-8.75 flex items-center justify-center">
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li
+                                    class="bg-[#FEE9E0] hover:bg-[#f7783c] dark:bg-[#3D2F23] dark:text-[#fdfffc] cursor-pointer duration-300 rounded-full w-8.75 h-8.75 flex items-center justify-center">
+                                    <a href=""><i class="fab fa-x"></i></a>
+                                </li>
+                                <li
+                                    class="bg-[#FEE9E0] hover:bg-[#f7783c] dark:bg-[#3D2F23] dark:text-[#fdfffc] cursor-pointer duration-300 rounded-full w-8.75 h-8.75 flex items-center justify-center">
+                                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                                </li>
+                                <li
+                                    class="bg-[#FEE9E0] hover:bg-[#f7783c] dark:bg-[#3D2F23] dark:text-[#fdfffc] cursor-pointer duration-300 rounded-full w-8.75 h-8.75 flex items-center justify-center">
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-content max-w-93.5 max-[570px]:mt-6" data-aos="fade-up">
+                        <div class="heading">
+                            <h6 class="text-[18px] font-bold mb-6.25 dark:text-[#fdfffc]">CONTACT INFO</h6>
+                        </div>
+                        <div class="linkes mt-5">
+                            <ul>
+                                <li class="duration-300 rounded-full mb-2.5 flex items-center justify-center gap-2">
+                                    <i class="fas fa-chevron-right text-[13px] dark:text-[#fdfffc]"></i>
+                                    <p class="text-[14px] dark:text-[#fdfffc]">Food, 10001, 5th Avenue, #06 lane street,
+                                        NY - 62617.</p>
+                                </li>
+                                <li class="duration-300 rounded-full mb-2.5">
+                                    <a href=""
+                                        class="flex items-center justify-start gap-2 hover:text-[#0abf53] duration-300 dark:text-[#fdfffc]">
+                                        <i class="fas fa-chevron-right text-[13px]"></i>
+                                        <p class="text-[14px]">+1(21) 234 4567</p>
+                                    </a>
+                                </li>
+                                <li class="duration-300 rounded-full mb-2.5">
+                                    <a href=""
+                                        class="flex items-center justify-start gap-2 hover:text-[#0abf53] duration-300 dark:text-[#fdfffc]">
+                                        <i class="fas fa-chevron-right text-[13px]"></i>
+                                        <p class="text-[14px]">info@example.com</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="text-[15px] dark:text-[#fdfffc]">
+                    © 2026 Salads All Rights Reserved | WordPress Theme by <a href=""
+                        class="font-bold text-[15px] hover:text-[#0abf53] hover:underline duration-300">W3Layouts.</a>
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
